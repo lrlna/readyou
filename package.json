@@ -1,0 +1,24 @@
+{
+  "name": "readyou",
+  "version": "1.0.0",
+  "description": "generate a basic readme file given a preset json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "readme",
+    "readyou",
+    "config",
+    "json",
+    "automation",
+    "docs",
+    "documentation"
+  ],
+  "author": "Irina Shestak",
+  "license": "MIT",
+  "dependencies": {
+    "pull-stream": "^3.5.0",
+    "yargs": "^6.3.0"
+  }
+}
