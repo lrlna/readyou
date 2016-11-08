@@ -4,9 +4,10 @@
   "description": "generate a basic readme file given a preset json file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "standard",
+    "test": "nyc --cache mocha --timeout=8000"
   },
-  "keywords": [
+  "Keywords": [
     "readme",
     "readyou",
     "config",
@@ -20,5 +21,11 @@
   "dependencies": {
     "pull-stream": "^3.5.0",
     "yargs": "^6.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "nyc": "^8.4.0",
+    "standard": "^8.5.0"
   }
 }
