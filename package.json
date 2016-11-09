@@ -7,6 +7,9 @@
     "pretest": "standard",
     "test": "nyc --cache mocha --timeout=8000"
   },
+  "bin": {
+    "readyou": "index.js"
+  },
   "Keywords": [
     "readme",
     "readyou",
@@ -19,7 +22,7 @@
   "author": "Irina Shestak",
   "license": "MIT",
   "dependencies": {
-    "pull-stream": "^3.5.0",
+    "mississippi": "^1.2.0",
     "yargs": "^6.3.0"
   },
   "devDependencies": {
