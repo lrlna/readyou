@@ -1,8 +1,8 @@
+const fs = require("fs")
 const miss = require("mississippi")
 const path = require("path")
-const fs = require("fs")
 
-exports.command = 'run [file]'
+exports.command = 'run [--file]'
 
 exports.describe = 'Generate a readme by providing a .json file'
 
@@ -14,7 +14,7 @@ exports.builder = {
 }
 
 exports.handler = function (argv) {
-  var input = argv.file
+  var input = argv.file ? argv.file : getConfigFile()
   // read current path, and create a file in current path
   var output = path.join(process.cwd(), 'README.md')
   var read = fs.createReadStream(input)
@@ -41,4 +41,7 @@ exports.handler = function (argv) {
     if (err) return console.error(`Can't process json ${err}`)
     console.log(`file written successfully`)
   })
+}
+
+function getConfigFile() {
 }
