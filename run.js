@@ -8,13 +8,13 @@ exports.describe = 'Generate a readme by providing a .json file'
 
 exports.builder = {
   file: {
-    desc: 'provide a json file to create a readme',
+    desc: 'provide an absolute path to json file to create a readme',
     alias: 'f'
   }
 }
 
 exports.handler = function (argv) {
-  var input = path.join(process.cwd(), argv.file)
+  var input = argv.file
   // read current path, and create a file in current path
   var output = path.join(process.cwd(), 'README.md')
   var read = fs.createReadStream(input)
