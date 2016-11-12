@@ -1,7 +1,6 @@
 const fs = require("fs")
 const miss = require("mississippi")
 const path = require("path")
-const prompt = require("prompt")
 
 exports.command = 'config [--path]'
 
@@ -15,10 +14,11 @@ exports.builder = {
 }
 
 exports.handler = function (argv) {
-  var path = argv.path
+  var configFile = argv.path
+  var rootDirectory = path.join(process.env.HOME, '.readyou-config.json')
+  var read = fs.createReadStream(configFile)
+  var write = fs.createWriteStream(rootDirectory)
   // stream the file to copy it to root
-  var read = fs.createReadStream(path)
-  var write = fs.createWriteStream('~/readyou-config.json')
   miss.pipe(read, write, function (err) {
     if (err) return console.error(`Can't setupt config file ${err}`)
     console.log(`Successfully setup config file`)
