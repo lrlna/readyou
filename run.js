@@ -8,7 +8,7 @@ exports.describe = 'Generate a readme by providing a .json file'
 
 exports.builder = {
   file: {
-    desc: 'provide a json file',
+    desc: 'provide a json file to create a readme',
     alias: 'f'
   }
 }
