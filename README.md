@@ -15,12 +15,17 @@ Set up a `.json` file where keys will be your README section headings, and value
 }
 ```
 
-Then run the following command in your current working directory, where `--file` (or `-f`, if you prefer the shorthand) is the absolute path to your generator file. 
+Then run the following command in your current working directory, where `--file` (or `-f`, if you prefer the shorthand) is the absolute path to your generator file. If you've set up a default `config` file with `readyou config --file`, you don't have to provide a file path.
 
 ```bash
-readyou run  --file /Users/buffy/developer/project-setup/readme-generator.json
+readyou run  --file /absolute/path/to/file
 ```
 
+If you are to use the same readme structure often, you may also set up a default config file for `readyou` to use. 
+
+```bash
+readyou config --file /absolute/path/to/file
+```
 
 ## Install
 Install with npm:
