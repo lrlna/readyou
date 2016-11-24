@@ -3,5 +3,8 @@
   "example": "Certainly it was only the scalp that was grey. What are you? Do you know that you have betrayed everybody and everything. He heard himself promising to lie, to steal, to forge, to murder, to encourage drug-taking and prostitution, to ",
   "test": "Certainly it was only the scalp that was grey. What are you? Do you know that you have betrayed everybody and everything. He heard himself promising to lie, to steal, to forge, to murder, to encourage drug-taking and prostitution, to ",
   "deploy": "Certainly it was only the scalp that was grey. What are you? Do you know that you have betrayed everybody and everything. He heard himself promising to lie, to steal, to forge, to murder, to encourage drug-taking and prostitution, to ",
-  "further reading": "Certainly it was only the scalp that was grey. What are you? Do you know that you have betrayed everybody and everything. He heard himself promising to lie, to steal, to forge, to murder, to encourage drug-taking and prostitution, to "
+  "further reading": {
+    "more reading": "Certainly it was only the scalp that was grey. What are you? Do you know that you have betrayed everybody and everything. He heard himself promising to lie, to steal, to forge, to murder, to encourage drug-taking and prostitution, to ",
+    "even more reading": "still, attacking a keyboard passphrase is a great deal simpler than generating a private key from its public part"
+  }
 }
