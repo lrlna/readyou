@@ -37,8 +37,7 @@ exports.handler = (argv) => {
     function (chunk, enc, callback) {
       var text = ''
       var file = JSON.parse(chunk.toString())
-      console.log(flattenReadme(file))
-      var readme = text.concat.apply([], flattenReadme(file))
+      var readme = text.concat.apply('', [].concat.apply([], flattenReadme(file)))
       callback(null, readme)
     },
     // last run
