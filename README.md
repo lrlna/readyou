@@ -1,5 +1,7 @@
 # READYOU
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lrlna/readyou.svg)](https://greenkeeper.io/)
+
 ## About
 A tiny module to generate your readmes :books: :memo:. 
 
